@@ -1,0 +1,22 @@
+From e4a754387f6854c8799325fecc4e9024f5c5ad43 Mon Sep 17 00:00:00 2001
+From: betsyheimburger <58157779+betsyheimburger@users.noreply.github.com>
+Date: Thu, 27 Aug 2026 17:59:02 -0700
+Subject: [PATCH] Update bolusPartialApplicationFactor to 1.0
+
+---
+ Loop/Models/LoopConstants.swift | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Loop/Loop/Models/LoopConstants.swift b/Loop/Loop/Models/LoopConstants.swift
+index fb69c8275f..cd90d7aeab 100644
+--- a/Loop/Loop/Models/LoopConstants.swift
++++ b/Loop/Loop/Models/LoopConstants.swift
+@@ -50,7 +50,7 @@ enum LoopConstants {
+     static let retrospectiveCorrectionEnabled = true
+     
+     // Percentage of recommended dose to apply as bolus when using automatic bolus dosing strategy
+-    static let bolusPartialApplicationFactor = 0.4
++    static let bolusPartialApplicationFactor = 1.0
+ 
+     /// Loop completion aging category limits
+     static let completionFreshLimit = TimeInterval(minutes: 6)
