@@ -216,7 +216,6 @@ jobs:
           /bin/bash -c "$(curl -fsSL \
           https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)" \
           no_auth \
-          override_sens \
           now_line \
           watch_title \
           2hlollipop \
@@ -228,19 +227,19 @@ jobs:
           # the final customization listed above CANNOT have a continuation character
           # more customizations can be pasted after this line
           
-          # Module: File: code customization description
+          # Loop: Loop/Models/LoopConstants.swift Adjust percent bolus for automatic bolus
           curl https://github.com/betsyheimburger/Loop/commit/e4a754387f6854c8799325fecc4e9024f5c5ad43.patch | git apply -v --directory=Loop
 
-          # Module: File: code customization description
+          # Loop: Loop/Models/GlucoseBasedApplicationFactorStrategy.swift Adjust GBPA percentages
           curl https://github.com/betsyheimburger/Loop/commit/547ec1ebc93a6698c2c95ef7105c8e1dabc24f4a.patch | git apply -v --directory=Loop
 
-          # Module: File: code customization description
+          # LoopKit: LoopKitUI/CarbKit/FoodEmojiDataSource.swift Move carb emojis
           curl https://github.com/betsyheimburger/LoopKit/commit/80408fdaa124a00907d7f5423c8e97bb93204caa.patch | git apply -v --directory=LoopKit
 
-          # Module: File: code customization description
+          # Loop: LoopCore/LoopCoreConstants.swift Adjust carb absorption times
           curl https://github.com/betsyheimburger/Loop/commit/51af10625e5e3c0abc9f8986f24d5e30a5d95a8e.patch | git apply -v --directory=Loop
 
-          # Module: File: code customization description
+          # LoopKit: LoopKitUI/Views/InsulinSensitivityScalingTableViewCell.swift Adjust override insulin needs picker
           curl https://github.com/betsyheimburger/LoopKit/commit/04063a3cd71d8bc1849c5da047e8776d23b81a34.patch | git apply -v --directory=LoopKit
           
       # Patch Fastlane Match to not print tables
