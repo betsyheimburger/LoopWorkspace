@@ -82,7 +82,7 @@ index 999237f66..26dcfce47 100644\
 +            "\uc0\u55356 \u57200 ", // shortcake\
 +            "\uc0\u55356 \u57195 ", // chocolate bar\
              "\uc0\u9749 \u65039 ", // coffee\
-             "\uc0\u55358 \u57046 \'94, // tea\
+             "\uc0\u55358 \u57046 ", // tea\
 +            "\uc0\u55356 \u57205 ", // teacup without handle\
 +            "\uc0\u55358 \u56676 ", // cup with straw (soda)\
 +            "\uc0\u55358 \u56779 ", // bubble tea\
