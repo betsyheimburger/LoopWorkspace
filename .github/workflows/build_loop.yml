@@ -226,7 +226,7 @@ jobs:
           # the final customization listed above CANNOT have a continuation character
           # more customizations can be pasted after this line
 
-          # Module: File: code customization description
+          # Loop: Loop/Models/LoopConstants.swift Percent for automatic bolus
           # curl https://github.com/betsyheimburger/Loop/commit/e4a754387f6854c8799325fecc4e9024f5c5ad43.patch | git apply -v --directory=Loop
 
           # Loop: Loop/Models/GlucoseBasedApplicationFactorStrategy.swift Adjust GBPA percentages
