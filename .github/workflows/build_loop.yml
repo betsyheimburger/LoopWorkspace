@@ -239,7 +239,7 @@ jobs:
           curl https://github.com/betsyheimburger/Loop/commit/51af10625e5e3c0abc9f8986f24d5e30a5d95a8e.patch | git apply -v --directory=Loop
 
           # LoopKit: LoopKitUI/Views/InsulinSensitivityScalingTableViewCell.swift Adjust override insulin needs picker
-          curl https://github.com/betsyheimburger/LoopKit/commit/04063a3cd71d8bc1849c5da047e8776d23b81a34.patch | git apply -v --directory=LoopKit
+          curl https://github.com/betsyheimburger/LoopKit/commit/7bcaecfaa0ea5a9b384d31c6868ee69c23b85d5d.patch | git apply -v --directory=LoopKit
           
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
