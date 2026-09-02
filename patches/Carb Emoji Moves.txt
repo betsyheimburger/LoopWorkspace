@@ -1,0 +1,213 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 From 80408fdaa124a00907d7f5423c8e97bb93204caa Mon Sep 17 00:00:00 2001\
+From: betsyheimburger <58157779+betsyheimburger@users.noreply.github.com>\
+Date: Thu, 27 Aug 2026 20:00:32 -0700\
+Subject: [PATCH] Move Emojis\
+\
+Removed and added various food emojis in the fast, medium, slow, and other categories.\
+---\
+ LoopKitUI/CarbKit/FoodEmojiDataSource.swift | 119 +++++++-------------\
+ 1 file changed, 39 insertions(+), 80 deletions(-)\
+\
+diff --git a/LoopKit/LoopKitUI/CarbKit/FoodEmojiDataSource.swift b/LoopKit/LoopKitUI/CarbKit/FoodEmojiDataSource.swift\
+index 999237f66..26dcfce47 100644\
+--- a/LoopKit/LoopKitUI/CarbKit/FoodEmojiDataSource.swift\
++++ b/LoopKit/LoopKitUI/CarbKit/FoodEmojiDataSource.swift\
+@@ -14,36 +14,58 @@ final class FoodEmojiDataSource: EmojiDataSource \{\
+     private static let fast: [String] = \{\
+         var fast = [\
+             "\uc0\u55356 \u57197 ", // lollipop\
+-            "\uc0\u55358 \u56771 ", // juice box\
+-            "\uc0\u55358 \u56676 ", // cup with straw (soda)\
+-            "\uc0\u55356 \u57196 ", // candy\
+             "\uc0\u55356 \u57199 ", // honey pot\
++            "\uc0\u55358 \u56667 ", // glass of milk\
++            "\uc0\u55356 \u57186 ", // oden\
+             "\uc0\u55356 \u57159 ", // grapes\
+             "\uc0\u55358 \u57040 ", // blueberries\
+-            "\uc0\u55356 \u57160 ", // melon\
+             "\uc0\u55356 \u57161 ", // watermelon\
+             "\uc0\u55356 \u57162 ", // tangerine\
+-            "\uc0\u55356 \u57163 ", // lemon\
+             "\uc0\u55356 \u57164 ", // banana\
+-            "\uc0\u55356 \u57165 ", // pineapple\
+             "\uc0\u55356 \u57166 ", // red apple\
+-            "\uc0\u55356 \u57167 ", // green apple\
+-            "\uc0\u55356 \u57168 ", // pear\
+             "\uc0\u55356 \u57169 ", // peach\
+             "\uc0\u55356 \u57170 ", // cherries\
+             "\uc0\u55356 \u57171 ", // strawberry\
+             "\uc0\u55358 \u56669 ", // kiwi fruit\
+-            "\uc0\u55358 \u56685 ", // mango\
++            "\uc0\u55356 \u57157 ", // tomato\
++            "\uc0\u55358 \u56661 ", // carrot\
++            "\uc0\u55356 \u57142 ", // hot pepper\
++            "\uc0\u55358 \u57041 ", // bell pepper\
++            "\uc0\u55358 \u56658 ", // cucumber\
++            "\uc0\u55358 \u56663 ", // green salad\
++            "\uc0\u55356 \u57156 ", // mushroom\
++            "\uc0\u55358 \u56678 ", // broccoli\
++            "\uc0\u55356 \u57158 ", // eggplant\
++            "\uc0\u55358 \u56660 ", // potato\
+             "\uc0\u55356 \u57149 ", // ear of corn\
++            "\uc0\u55356 \u57182 ", // bread\
++            "\uc0\u55356 \u57178 ", // cooked rice\
+             "\uc0\u55356 \u57215 ", // popcorn\
+-            "\uc0\u55356 \u57176 ", // rice cracker\
++            "\uc0\u55358 \u56672 ", // fortune cookie\
++            "\uc0\u55358 \u56680 ", // pretzel\
++            "\uc0\u55358 \u56662 ", // baguette bread\
++            "\uc0\u55358 \u56687 ", // bagel\
++            "\uc0\u55358 \u56656 ", // croissant\
++            "\uc0\u55358 \u56670 ", // pancakes\
++            "\uc0\u55358 \u56775 ", // waffle\
+             "\uc0\u55356 \u57185 ", // dango\
+             "\uc0\u55356 \u57190 ", // soft ice cream\
++            "\uc0\u55358 \u56677 ", // coconut\
+             "\uc0\u55356 \u57191 ", // shaved ice\
+             "\uc0\u55356 \u57218 ", // birthday cake\
+-            "\uc0\u55358 \u56672 ", // fortune cookie\
++            "\uc0\u55356 \u57198 ", // custard\
++            "\uc0\u55358 \u56679 ", // pie\
++            "\uc0\u55356 \u57192 ", // ice cream\
++            "\uc0\u55356 \u57193 ", // doughnut\
++            "\uc0\u55356 \u57194 ", // cookie\
++            "\uc0\u55358 \u56769 ", // cupcake\
++            "\uc0\u55356 \u57200 ", // shortcake\
++            "\uc0\u55356 \u57195 ", // chocolate bar\
+             "\uc0\u9749 \u65039 ", // coffee\
+             "\uc0\u55358 \u57046 \'94, // tea\
++            "\uc0\u55356 \u57205 ", // teacup without handle\
++            "\uc0\u55358 \u56676 ", // cup with straw (soda)\
++            "\uc0\u55358 \u56779 ", // bubble tea\
+         ]\
+ \
+         return fast\
+@@ -52,63 +74,17 @@ final class FoodEmojiDataSource: EmojiDataSource \{\
+     private static let medium: [String] = \{\
+         var medium = [\
+             "\uc0\u55356 \u57134 ", // taco\
++            "\uc0\u55356 \u57189 ", // fish cake with swirl\
+             "\uc0\u55356 \u57183 ", // french fries\
+             "\uc0\u55356 \u57203 ", // cooking\
+             "\uc0\u55356 \u57202 ", // pot of food\
+             "\uc0\u55358 \u56664 ", // pan of food\
+-            "\uc0\u55356 \u57201 ", // bento box\
+             "\uc0\u55356 \u57179 ", // curry rice\
+-            "\uc0\u55356 \u57180 ", // steaming bowl (ramen / noodle soup)\
+             "\uc0\u55356 \u57184 ", // roasted sweet potato\
+             "\uc0\u55356 \u57188 ", // fried shrimp\
+-            "\uc0\u55358 \u56746 ", // oyster\
+             "\uc0\u55356 \u57189 ", // fish cake with swirl\
+             "\uc0\u55358 \u56682 ", // sandwich\
+-            "\uc0\u55358 \u56665 ", // pita sandwich\
+-            "\uc0\u55358 \u56774 ", // falafel\
+-            "\uc0\u55358 \u57044 ", // tamale\
+-            "\uc0\u55358 \u56683 ", // canned food\
+-            "\uc0\u55358 \u56671 ", // dumpling\
+-            "\uc0\u55358 \u56673 ", // takeout box\
+-            "\uc0\u55356 \u57186 ", // oden\
+-            "\uc0\u55356 \u57187 ", // sushi\
+-            "\uc0\u55356 \u57157 ", // tomato\
+-            "\uc0\u55358 \u56660 ", // potato\
+-            "\uc0\u55358 \u56661 ", // carrot\
+-            "\uc0\u55356 \u57142 ", // hot pepper\
+-            "\uc0\u55358 \u57041 ", // bell pepper\
+-            "\uc0\u55358 \u56773 ", // onion\
+-            "\uc0\u55358 \u56772 ", // garlic\
+-            "\uc0\u55358 \u56658 ", // cucumber\
+-            "\uc0\u55358 \u56663 ", // green salad\
+-            "\uc0\u55358 \u56684 ", // leafy green\
+-            "\uc0\u55356 \u57156 ", // mushroom\
+-            "\uc0\u55358 \u56678 ", // broccoli\
+-            "\uc0\u55356 \u57158 ", // eggplant\
+             "\uc0\u55358 \u57048 ", // beans\
+-            "\uc0\u55358 \u56677 ", // coconut\
+-            "\uc0\u55356 \u57182 ", // bread\
+-            "\uc0\u55358 \u56656 ", // croissant\
+-            "\uc0\u55358 \u56662 ", // baguette bread\
+-            "\uc0\u55358 \u56687 ", // bagel\
+-            "\uc0\u55358 \u57043 ", // flat bread\
+-            "\uc0\u55358 \u56680 ", // pretzel\
+-            "\uc0\u55358 \u56670 ", // pancakes\
+-            "\uc0\u55358 \u56775 ", // waffle\
+-            "\uc0\u55356 \u57177 ", // rice ball\
+-            "\uc0\u55356 \u57178 ", // cooked rice\
+-            "\uc0\u55356 \u57212 ", // baby bottle\
+-            "\uc0\u55358 \u56667 ", // glass of milk\
+-            "\uc0\u55356 \u57198 ", // custard\
+-            "\uc0\u55358 \u56679 ", // pie\
+-            "\uc0\u55356 \u57192 ", // ice cream\
+-            "\uc0\u55356 \u57193 ", // doughnut\
+-            "\uc0\u55356 \u57194 ", // cookie\
+-            "\uc0\u55358 \u56769 ", // cupcake\
+-            "\uc0\u55358 \u56686 ", // moon cake\
+-            "\uc0\u55356 \u57200 ", // shortcake\
+-            "\uc0\u55356 \u57195 ", // chocolate bar\
+-            "\uc0\u55358 \u56779 ", // bubble tea\
+        ]\
+ \
+         return medium\
+@@ -117,22 +93,20 @@ final class FoodEmojiDataSource: EmojiDataSource \{\
+     private static let slow: [String] = \{\
+         var slow = [\
+             "\uc0\u55356 \u57173 ", // pizza\
++            "\uc0\u55356 \u57181 ", // spaghetti\
++            "\uc0\u55358 \u56673 ", // takeout box\
++            "\uc0\u55356 \u57187 ", // sushi\
+             "\uc0\u55358 \u56657 ", // avocado\
+-            "\uc0\u55358 \u56666 ", // egg\
+             "\uc0\u55358 \u56668 ", // peanuts\
+-            "\uc0\u55356 \u57136 ", // chestnut\
+             "\uc0\u55358 \u56768 ", // cheese wedge\
+-            "\uc0\u55358 \u57045 ", // fondue\
+-            "\uc0\u55356 \u57174 ", // meat on bone\
+             "\uc0\u55356 \u57175 ", // poultry leg\
+             "\uc0\u55358 \u56659 ", // bacon\
+             "\uc0\u55356 \u57172 ", // hamburger\
+-            "\uc0\u55356 \u57133 ", // hot dog\
+             "\uc0\u55356 \u57135 ", // burrito\
+-            "\uc0\u55356 \u57181 ", // spaghetti\
+             "\uc0\u55358 \u56681 ", // cut of meat\
+             "\uc0\u55358 \u56776 ", // butter\
+-            "\uc0\u55358 \u56756 ", // bone\
++            "\uc0\u55356 \u57180 ", // steaming bowl (ramen / noodle soup)\
++            "\uc0\u55358 \u56671 ", // dumpling\
+         ]\
+ \
+         return slow\
+@@ -140,7 +114,6 @@ final class FoodEmojiDataSource: EmojiDataSource \{\
+ \
+     private static let other: [String] = \{\
+         var other = [\
+-            "\uc0\u55356 \u57206 ", // sake\
+             "\uc0\u55356 \u57214 ", // bottle with popping cork\
+             "\uc0\u55356 \u57207 ", // wine glass\
+             "\uc0\u55356 \u57208 ", // cocktail glass\
+@@ -149,20 +122,6 @@ final class FoodEmojiDataSource: EmojiDataSource \{\
+             "\uc0\u55358 \u56642 ", // clinking glasses\
+             "\uc0\u55358 \u56643 ", // tumbler glass\
+             "\uc0\u55356 \u57209 ", // tropical drink\
+-            "\uc0\u55358 \u56777 ", // mate\
+-            "\uc0\u55358 \u57047 ", // pouring liquid\
+-            "\uc0\u55358 \u56675 ", // bowl with spoon\
+-            "\uc0\u55358 \u56676 ", // cup with straw\
+-            "\uc0\u55358 \u56674 ", // chopsticks\
+-            "\uc0\u55356 \u57205 ", // teacup without handle\
+-            "\uc0\u55356 \u57204 ", // fork and knife\
+-            "\uc0\u55356 \u57213 ", // fork and knife with plate\
+-            "\uc0\u55358 \u56644 ", // spoon\
+-            "\uc0\u55358 \u57049 ", // jar\
+-            "\uc0\u55358 \u56778 ", // ice cube\
+-            "\uc0\u55358 \u56770 ", // salt\
+-            "1\uc0\u65039 \u8419 ", "2\u65039 \u8419 ", "3\u65039 \u8419 ", "4\u65039 \u8419 ", "5\u65039 \u8419 ",\
+-            "6\uc0\u65039 \u8419 ", "7\u65039 \u8419 ", "8\u65039 \u8419 ", "9\u65039 \u8419 ", "\u55357 \u56607 "\
+         ]\
+ \
+         return other}
