@@ -227,7 +227,7 @@ jobs:
           # more customizations can be pasted after this line
 
           # Loop: Loop/Models/LoopConstants.swift Percent for automatic bolus
-          curl https://github.com/betsyheimburger/Loop/commit/e4a754387f6854c8799325fecc4e9024f5c5ad43.patch | git apply -v --directory=Loop
+          # curl https://github.com/betsyheimburger/Loop/commit/e4a754387f6854c8799325fecc4e9024f5c5ad43.patch | git apply -v --directory=Loop
 
           # Loop: Loop/Models/GlucoseBasedApplicationFactorStrategy.swift Adjust GBPA percentages
           # curl https://github.com/betsyheimburger/Loop/commit/547ec1ebc93a6698c2c95ef7105c8e1dabc24f4a.patch | git apply -v --directory=Loop
