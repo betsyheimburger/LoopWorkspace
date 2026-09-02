@@ -1,0 +1,22 @@
+From 7bcaecfaa0ea5a9b384d31c6868ee69c23b85d5d Mon Sep 17 00:00:00 2001
+From: betsyheimburger <58157779+betsyheimburger@users.noreply.github.com>
+Date: Tue, 1 Sep 2026 19:50:53 -0700
+Subject: [PATCH] Change insulin sensitivity scale factors range
+
+---
+ LoopKitUI/Views/InsulinSensitivityScalingTableViewCell.swift | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/LoopKit/LoopKitUI/Views/InsulinSensitivityScalingTableViewCell.swift b/LoopKit/LoopKitUI/Views/InsulinSensitivityScalingTableViewCell.swift
+index 250f71b76..2133df472 100644
+--- a/LoopKit/LoopKitUI/Views/InsulinSensitivityScalingTableViewCell.swift
++++ b/LoopKit/LoopKitUI/Views/InsulinSensitivityScalingTableViewCell.swift
+@@ -16,7 +16,7 @@ protocol InsulinSensitivityScalingTableViewCellDelegate: AnyObject {
+ 
+ final class InsulinSensitivityScalingTableViewCell: UITableViewCell {
+ 
+-    private let allScaleFactorPercentages = Array(stride(from: 10, through: 200, by: 10))
++    private let allScaleFactorPercentages = Array(stride(from: 5, through: 400, by: 5))
+ 
+     @IBOutlet private weak var titleLabel: UILabel!
+     
