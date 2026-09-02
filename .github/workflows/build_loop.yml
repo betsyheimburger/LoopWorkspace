@@ -227,19 +227,19 @@ jobs:
           # more customizations can be pasted after this line
 
           # Loop: Loop/Models/LoopConstants.swift Percent for automatic bolus
-          # curl https://github.com/betsyheimburger/Loop/commit/e4a754387f6854c8799325fecc4e9024f5c5ad43.patch | git apply -v --directory=Loop
+          curl https://github.com/betsyheimburger/Loop/commit/e4a754387f6854c8799325fecc4e9024f5c5ad43.patch | git apply -v --directory=Loop
 
           # Loop: Loop/Models/GlucoseBasedApplicationFactorStrategy.swift Adjust GBPA percentages
-          # curl https://github.com/betsyheimburger/Loop/commit/547ec1ebc93a6698c2c95ef7105c8e1dabc24f4a.patch | git apply -v --directory=Loop
+          curl https://github.com/betsyheimburger/Loop/commit/547ec1ebc93a6698c2c95ef7105c8e1dabc24f4a.patch | git apply -v --directory=Loop
 
           # LoopKit: LoopKitUI/CarbKit/FoodEmojiDataSource.swift Move carb emojis
-          # curl https://github.com/betsyheimburger/LoopKit/commit/55b524f25dad75c8afbd944ea7d62f7ecae84fcc.patch | git apply -v --directory=LoopKit
+          curl https://github.com/betsyheimburger/LoopKit/commit/55b524f25dad75c8afbd944ea7d62f7ecae84fcc.patch | git apply -v --directory=LoopKit
 
           # Loop: LoopCore/LoopCoreConstants.swift Adjust carb absorption times
-          # curl https://github.com/betsyheimburger/Loop/commit/51af10625e5e3c0abc9f8986f24d5e30a5d95a8e.patch | git apply -v --directory=Loop
+          curl https://github.com/betsyheimburger/Loop/commit/51af10625e5e3c0abc9f8986f24d5e30a5d95a8e.patch | git apply -v --directory=Loop
 
           # LoopKit: LoopKitUI/Views/InsulinSensitivityScalingTableViewCell.swift Adjust override insulin needs picker
-          # curl https://github.com/betsyheimburger/LoopKit/commit/7bcaecfaa0ea5a9b384d31c6868ee69c23b85d5d.patch | git apply -v --directory=LoopKit
+          curl https://github.com/betsyheimburger/LoopKit/commit/7bcaecfaa0ea5a9b384d31c6868ee69c23b85d5d.patch | git apply -v --directory=LoopKit
           
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
